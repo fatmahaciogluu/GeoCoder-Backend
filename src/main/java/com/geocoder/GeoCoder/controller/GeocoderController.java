@@ -77,7 +77,6 @@ public class GeocoderController {
             String resultsJson = convertResultsToJson(results);
             locationEntity.setResults(resultsJson);
         }
-
         return locationEntity;
     }
 
