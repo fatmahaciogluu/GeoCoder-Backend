@@ -1,10 +1,16 @@
 package com.geocoder.GeoCoder.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Result {
-    @JsonProperty("formatted_address")
-    private String address;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String name;
 
     public Geometry getGeometry() {
         return geometry;
@@ -16,12 +22,5 @@ public class Result {
 
     private Geometry geometry;
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
 }
